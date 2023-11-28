@@ -18,6 +18,7 @@
 #include <rmw/ret_types.h>
 
 #include <uxr/client/client.h>
+#include <uxr/client/profile/transport/ip/ip.h>
 
 #include "../rmw_microros_internal/types.h"
 #include "./rmw_microros_internal/error_handling_internal.h"
