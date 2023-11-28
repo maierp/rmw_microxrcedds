@@ -227,7 +227,6 @@ set(SRCS
   src/rmw_microros/ping.c
   src/rmw_microros/timing.c
   src/rmw_microros/discovery.c
-  $<$<OR:$<BOOL:${RMW_UXRCE_TRANSPORT_UDP}>,$<BOOL:${RMW_UXRCE_TRANSPORT_TCP}>>:src/rmw_microros/discovery.c>
   $<$<BOOL:${RMW_UXRCE_TRANSPORT_CUSTOM}>:src/rmw_microros/custom_transport.c>
   $<$<BOOL:${RMW_UXRCE_GRAPH}>:src/rmw_graph.c>
   $<$<BOOL:${RMW_UROS_ERROR_HANDLING}>:src/rmw_microros/error_handling.c>
